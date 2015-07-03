@@ -11,6 +11,7 @@ test('balanced ternary string to number', function(t) {
   t.equal(bts2n('1i'), 2);
   t.equal(bts2n('i1'), -2);
   t.equal(bts2n('i01'), -8);
+  t.equal(bts2n('10i'), 8);
   t.equal(bts2n('11i'), 11);
   t.equal(bts2n('iiiii'), -121)
   t.equal(bts2n('11111'), 121)
@@ -24,6 +25,7 @@ test('number to balanced ternary string', function(t) {
   t.equal(n2bts(-1), 'i');
   t.equal(n2bts(-2), 'i1');
   t.equal(n2bts(-3), 'i0');
+  t.equal(n2bts(8), '10i');
   t.equal(n2bts(121), '11111');
   t.equal(n2bts(-121), 'iiiii');
   t.equal(n2bts(6), '1i0');
