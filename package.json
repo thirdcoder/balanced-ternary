@@ -1,0 +1,19 @@
+{
+  "name": "balanced-ternary",
+  "description": "balanced ternary base 3 radix conversion",
+  "version": "0.0.1",
+  "main": "bt.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:/balanced-ternary.git"
+  },
+  "keywords": [
+    "balanced",
+    "ternary",
+    "base3",
+    "radix",
+    "numeric"
+  ],
+  "dependencies": {
+  }
+}
