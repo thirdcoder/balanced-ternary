@@ -32,19 +32,7 @@ function bts2n(s) {
   }
   return n;
 }
-function check(a,b) {
-  //console.log(a,'===',b);
-  if (a !== b) throw new Error('equality check assertion failed: '+a+' !== '+b);
-}
-check(bts2n('i'), -1);
-check(bts2n('0'), 0);
-check(bts2n('1'), 1);
-check(bts2n('1i'), 2);
-check(bts2n('i1'), -2);
-check(bts2n('i01'), -8);
-check(bts2n('11i'), 11);
-check(bts2n('iiiii'), -121)
-check(bts2n('11111'), 121)
+
 
 // signed integer to balanced ternary string
 function n2bts(n_) {
@@ -74,14 +62,8 @@ function n2bts(n_) {
   //console.log('n2bts',n_,s);
   return s;
 }
-check(n2bts(0), '0');
-check(n2bts(1), '1');
-check(n2bts(2), '1i');
-check(n2bts(-1), 'i');
-check(n2bts(-2), 'i1');
-check(n2bts(-3), 'i0');
-check(n2bts(121), '11111');
-check(n2bts(-121), 'iiiii');
-check(n2bts(6), '1i0');
 
-
+module.exports = {
+  bts2n: bts2n,
+  n2bts: n2bts
+};

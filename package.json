@@ -14,6 +14,11 @@
     "radix",
     "numeric"
   ],
-  "dependencies": {
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.0.0"
   }
 }
