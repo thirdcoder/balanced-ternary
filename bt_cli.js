@@ -12,13 +12,21 @@ function maybe_n(s) {
   return !!s.match(/^[-+]?[0-9]+$/);
 }
 
+var shown = {};
+
 process.argv.slice(2).forEach(function(arg) {
+  // try converting both to and from balanced ternary <-> decimal
+  // TODO: enhance for other bases, 3, 6, 9, 27, or other binary, octal, hex.. nega
   if (maybe_n(arg)) {
-    console.log(n2bts(arg)+' = '+arg);
+    var line = n2bts(arg)+' = '+arg;
+    if (!shown[line]) console.log(line);
+    shown[line] = 1;
   }
 
   if (maybe_bts(arg)) {
-    console.log(arg+' = '+bts2n(arg));
+    var line = arg+' = '+bts2n(arg);
+    if (!shown[line]) console.log(line);
+    shown[line] = 1;
   }
 });
 
