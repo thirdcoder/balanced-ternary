@@ -30,3 +30,10 @@ test('number to balanced ternary string', function(t) {
   t.end();
 });
 
+test('round trip', function(t) {
+  for (var i = -15; i <= 15; ++i) {
+    t.equal(bts2n(n2bts(i)), i);
+  }
+
+  t.end();
+});
