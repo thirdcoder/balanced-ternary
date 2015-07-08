@@ -65,5 +65,7 @@ function n2bts(n_) {
 
 module.exports = {
   bts2n: bts2n,
-  n2bts: n2bts
+  n2bts: n2bts,
+  BT_DIGIT_TO_N: BT_DIGIT_TO_N,
+  N_TO_BT_DIGIT: N_TO_BT_DIGIT
 };
