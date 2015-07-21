@@ -1,7 +1,7 @@
 {
   "name": "balanced-ternary",
   "description": "balanced ternary base 3 radix conversion",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "bt.js",
   "repository": {
     "type": "git",
