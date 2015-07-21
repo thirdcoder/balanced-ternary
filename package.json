@@ -5,7 +5,7 @@
   "main": "bt.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:/balanced-ternary.git"
+    "url": "git@github.com:thirdcoder/balanced-ternary.git"
   },
   "keywords": [
     "balanced",
@@ -20,5 +20,6 @@
   "dependencies": {},
   "devDependencies": {
     "tape": "^4.0.0"
-  }
+  },
+  "license": "MIT"
 }
